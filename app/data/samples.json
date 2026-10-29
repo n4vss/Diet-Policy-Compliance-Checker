@@ -1,0 +1,224 @@
+[
+ {
+  "name": "Low-sodium day (balanced)",
+  "policy_id": "low-sodium",
+  "plan": {
+   "breakfast": [
+    {
+     "food_id": "oatmeal",
+     "servings": 1
+    },
+    {
+     "food_id": "banana",
+     "servings": 1
+    },
+    {
+     "food_id": "milk",
+     "servings": 1
+    },
+    {
+     "food_id": "egg",
+     "servings": 1
+    }
+   ],
+   "lunch": [
+    {
+     "food_id": "chicken",
+     "servings": 1
+    },
+    {
+     "food_id": "brown_rice",
+     "servings": 1
+    },
+    {
+     "food_id": "broccoli",
+     "servings": 1
+    },
+    {
+     "food_id": "salad",
+     "servings": 1
+    },
+    {
+     "food_id": "apple",
+     "servings": 1
+    }
+   ],
+   "snack": [
+    {
+     "food_id": "yogurt",
+     "servings": 1
+    },
+    {
+     "food_id": "almonds",
+     "servings": 1
+    }
+   ],
+   "dinner": [
+    {
+     "food_id": "salmon",
+     "servings": 1
+    },
+    {
+     "food_id": "potato",
+     "servings": 1
+    },
+    {
+     "food_id": "spinach",
+     "servings": 1
+    },
+    {
+     "food_id": "carrots",
+     "servings": 1
+    },
+    {
+     "food_id": "olive_oil",
+     "servings": 1
+    },
+    {
+     "food_id": "wheat_toast",
+     "servings": 1
+    },
+    {
+     "food_id": "orange",
+     "servings": 1
+    }
+   ]
+  }
+ },
+ {
+  "name": "Diabetic day (consistent carbs)",
+  "policy_id": "diabetic",
+  "plan": {
+   "breakfast": [
+    {
+     "food_id": "oatmeal",
+     "servings": 1
+    },
+    {
+     "food_id": "banana",
+     "servings": 1
+    },
+    {
+     "food_id": "egg",
+     "servings": 1
+    }
+   ],
+   "lunch": [
+    {
+     "food_id": "chicken",
+     "servings": 1
+    },
+    {
+     "food_id": "brown_rice",
+     "servings": 1
+    },
+    {
+     "food_id": "broccoli",
+     "servings": 1
+    },
+    {
+     "food_id": "olive_oil",
+     "servings": 1
+    }
+   ],
+   "snack": [
+    {
+     "food_id": "yogurt",
+     "servings": 1
+    },
+    {
+     "food_id": "almonds",
+     "servings": 1
+    }
+   ],
+   "dinner": [
+    {
+     "food_id": "salmon",
+     "servings": 1
+    },
+    {
+     "food_id": "wheat_pasta",
+     "servings": 1
+    },
+    {
+     "food_id": "spinach",
+     "servings": 1
+    },
+    {
+     "food_id": "carrots",
+     "servings": 1
+    },
+    {
+     "food_id": "salad",
+     "servings": 1
+    },
+    {
+     "food_id": "olive_oil",
+     "servings": 1
+    }
+   ]
+  }
+ },
+ {
+  "name": "Standard tray (fails both)",
+  "policy_id": "low-sodium",
+  "plan": {
+   "breakfast": [
+    {
+     "food_id": "sweet_cereal",
+     "servings": 1
+    },
+    {
+     "food_id": "bacon",
+     "servings": 1
+    },
+    {
+     "food_id": "orange_juice",
+     "servings": 1
+    },
+    {
+     "food_id": "butter",
+     "servings": 1
+    }
+   ],
+   "lunch": [
+    {
+     "food_id": "canned_soup",
+     "servings": 2
+    },
+    {
+     "food_id": "ham",
+     "servings": 1
+    },
+    {
+     "food_id": "wheat_toast",
+     "servings": 2
+    },
+    {
+     "food_id": "soda",
+     "servings": 1
+    }
+   ],
+   "snack": [
+    {
+     "food_id": "cake",
+     "servings": 1
+    }
+   ],
+   "dinner": [
+    {
+     "food_id": "frozen_dinner",
+     "servings": 1
+    },
+    {
+     "food_id": "fries",
+     "servings": 1
+    },
+    {
+     "food_id": "cake",
+     "servings": 1
+    }
+   ]
+  }
+ }
+]

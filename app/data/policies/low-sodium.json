@@ -1,0 +1,95 @@
+{
+ "id": "low-sodium",
+ "name": "Low-Sodium Hospital Diet (2 g Na)",
+ "description": "Institutional 2,000 mg sodium diet order for cardiac, renal and hypertension patients.",
+ "rules": [
+  {
+   "id": "NA-DAY",
+   "title": "Daily sodium limit",
+   "type": "nutrient_max",
+   "scope": "day",
+   "nutrient": "sodium_mg",
+   "unit": "mg",
+   "limit": 2000,
+   "severity": "critical",
+   "evidence": "WHO (2012) and AHA advise <2,000 mg sodium/day for adults; many hospitals implement a 2 g sodium diet order."
+  },
+  {
+   "id": "NA-MEAL",
+   "title": "Sodium per main meal",
+   "type": "nutrient_max",
+   "scope": "meal",
+   "meals": [
+    "breakfast",
+    "lunch",
+    "dinner"
+   ],
+   "nutrient": "sodium_mg",
+   "unit": "mg",
+   "limit": 700,
+   "severity": "major",
+   "evidence": "Institutional policy: spread sodium so no main meal exceeds about one third of the daily limit."
+  },
+  {
+   "id": "NA-TAGS",
+   "title": "No high-sodium processed items",
+   "type": "forbidden_tag",
+   "tags": [
+    "high_sodium"
+   ],
+   "severity": "major",
+   "evidence": "Cured meats, canned soups and salted fried foods are excluded on 2 g sodium orders."
+  },
+  {
+   "id": "MEALS",
+   "title": "Breakfast, lunch and dinner served",
+   "type": "required_meals",
+   "meals": [
+    "breakfast",
+    "lunch",
+    "dinner"
+   ],
+   "severity": "minor",
+   "evidence": "Hospital tray service policy."
+  },
+  {
+   "id": "KCAL",
+   "title": "Daily energy range",
+   "type": "nutrient_range",
+   "scope": "day",
+   "nutrient": "kcal",
+   "unit": "kcal",
+   "min": 1500,
+   "max": 2500,
+   "severity": "minor",
+   "evidence": "Typical adult maintenance range."
+  },
+  {
+   "id": "VEG",
+   "title": "Vegetable servings",
+   "type": "group_servings_min",
+   "group": "vegetables",
+   "limit": 3,
+   "severity": "minor",
+   "evidence": "DASH eating pattern favours vegetables and fruit to raise potassium."
+  },
+  {
+   "id": "FRUIT",
+   "title": "Fruit servings",
+   "type": "group_servings_min",
+   "group": "fruits",
+   "limit": 2,
+   "severity": "minor",
+   "evidence": "DASH eating pattern."
+  },
+  {
+   "id": "SATFAT-PCT",
+   "title": "Saturated fat share of energy",
+   "type": "kcal_percent_max",
+   "severity": "minor",
+   "nutrient": "sat_fat_g",
+   "limit": 10,
+   "evidence": "Dietary Guidelines for Americans 2020\u20132025: sodium <2,300 mg/day; saturated fat <10% and added sugars <10% of energy."
+  }
+ ]
+}

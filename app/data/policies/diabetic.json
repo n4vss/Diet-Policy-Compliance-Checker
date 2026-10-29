@@ -1,0 +1,132 @@
+{
+ "id": "diabetic",
+ "name": "Diabetic Hospital Diet (Consistent Carbohydrate)",
+ "description": "Consistent-carbohydrate meal pattern for inpatients with diabetes.",
+ "rules": [
+  {
+   "id": "CARB-MAIN",
+   "title": "Carbohydrate per main meal",
+   "type": "nutrient_range",
+   "scope": "meal",
+   "meals": [
+    "breakfast",
+    "lunch",
+    "dinner"
+   ],
+   "nutrient": "carbs_g",
+   "unit": "g",
+   "min": 45,
+   "max": 60,
+   "severity": "major",
+   "evidence": "Common hospital consistent-carbohydrate order: 45\u201360 g per main meal."
+  },
+  {
+   "id": "CARB-SNACK",
+   "title": "Carbohydrate per snack",
+   "type": "nutrient_range",
+   "scope": "meal",
+   "meals": [
+    "snack"
+   ],
+   "nutrient": "carbs_g",
+   "unit": "g",
+   "min": 15,
+   "max": 30,
+   "severity": "minor",
+   "evidence": "Common hospital order: 15\u201330 g per snack."
+  },
+  {
+   "id": "SSB",
+   "title": "No sugar-sweetened beverages",
+   "type": "forbidden_tag",
+   "tags": [
+    "sugar_sweetened"
+   ],
+   "severity": "critical",
+   "evidence": "ADA Standards of Care: consistent carbohydrate intake across meals; limit sugar-sweetened beverages; ~14 g fiber per 1,000 kcal."
+  },
+  {
+   "id": "SUGAR-TAGS",
+   "title": "No high-sugar desserts or sweetened foods",
+   "type": "forbidden_tag",
+   "tags": [
+    "high_sugar"
+   ],
+   "severity": "major",
+   "evidence": "ADA Standards of Care: consistent carbohydrate intake across meals; limit sugar-sweetened beverages; ~14 g fiber per 1,000 kcal."
+  },
+  {
+   "id": "ADDSUG-PCT",
+   "title": "Added sugar share of energy",
+   "type": "kcal_percent_max",
+   "nutrient": "added_sugar_g",
+   "limit": 10,
+   "severity": "major",
+   "evidence": "Dietary Guidelines for Americans 2020\u20132025: sodium <2,300 mg/day; saturated fat <10% and added sugars <10% of energy."
+  },
+  {
+   "id": "FIBER",
+   "title": "Daily fibre",
+   "type": "nutrient_min",
+   "scope": "day",
+   "nutrient": "fiber_g",
+   "unit": "g",
+   "limit": 25,
+   "severity": "minor",
+   "evidence": "ADA Standards of Care: consistent carbohydrate intake across meals; limit sugar-sweetened beverages; ~14 g fiber per 1,000 kcal."
+  },
+  {
+   "id": "NA-DAY",
+   "title": "Daily sodium limit",
+   "type": "nutrient_max",
+   "scope": "day",
+   "nutrient": "sodium_mg",
+   "unit": "mg",
+   "limit": 2300,
+   "severity": "minor",
+   "evidence": "Dietary Guidelines for Americans 2020\u20132025: sodium <2,300 mg/day; saturated fat <10% and added sugars <10% of energy."
+  },
+  {
+   "id": "MEALS",
+   "title": "Breakfast, lunch and dinner served",
+   "type": "required_meals",
+   "meals": [
+    "breakfast",
+    "lunch",
+    "dinner"
+   ],
+   "severity": "minor",
+   "evidence": "Skipped meals disrupt glycaemic control."
+  },
+  {
+   "id": "VEG",
+   "title": "Vegetable servings",
+   "type": "group_servings_min",
+   "group": "vegetables",
+   "limit": 3,
+   "severity": "minor",
+   "evidence": "ADA Standards of Care: consistent carbohydrate intake across meals; limit sugar-sweetened beverages; ~14 g fiber per 1,000 kcal."
+  },
+  {
+   "id": "KCAL",
+   "title": "Daily energy range",
+   "type": "nutrient_range",
+   "scope": "day",
+   "nutrient": "kcal",
+   "unit": "kcal",
+   "min": 1500,
+   "max": 2200,
+   "severity": "minor",
+   "evidence": "Typical inpatient diabetic energy prescription."
+  },
+  {
+   "id": "SATFAT-PCT",
+   "title": "Saturated fat share of energy",
+   "type": "kcal_percent_max",
+   "severity": "major",
+   "nutrient": "sat_fat_g",
+   "limit": 10,
+   "evidence": "Dietary Guidelines for Americans 2020\u20132025: sodium <2,300 mg/day; saturated fat <10% and added sugars <10% of energy."
+  }
+ ]
+}

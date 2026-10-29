@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diet Policy Compliance Checker</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="top">
+  <h1>Diet Policy Compliance Checker</h1>
+  <p>Build a meal plan, pick a policy, and see exactly which rules it breaks and why.</p>
+</header>
+<main>
+  <section class="panel" aria-labelledby="h-policy">
+    <h2 id="h-policy">1. Policy</h2>
+    <label for="policy">Diet policy</label>
+    <select id="policy"></select>
+    <p id="policy-desc" class="muted"></p>
+    <details>
+      <summary>Rules in this policy</summary>
+      <ul id="rule-list" class="rules"></ul>
+    </details>
+    <details>
+      <summary>Edit as JSON (custom policy)</summary>
+      <textarea id="policy-json" rows="10" spellcheck="false" aria-label="Policy JSON"></textarea>
+      <label class="inline"><input type="checkbox" id="use-custom"> Validate against this JSON instead</label>
+    </details>
+  </section>
+
+  <section class="panel" aria-labelledby="h-plan">
+    <h2 id="h-plan">2. Meal plan</h2>
+    <div class="row">
+      <label for="sample" class="sr">Load sample</label>
+      <select id="sample"><option value="">Load a sample plan…</option></select>
+      <button id="clear" class="ghost" type="button">Clear plan</button>
+    </div>
+    <div id="meals" class="meals"></div>
+    <button id="validate" type="button" class="primary">Check compliance</button>
+  </section>
+
+  <section id="report" class="panel report" aria-live="polite" hidden></section>
+</main>
+<script src="/static/app.js"></script>
+</body>
+</html>

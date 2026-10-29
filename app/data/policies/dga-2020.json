@@ -1,0 +1,65 @@
+{
+ "id": "dga-2020",
+ "name": "National Guidelines (US DGA 2020\u20132025)",
+ "description": "General healthy-adult limits from the Dietary Guidelines for Americans.",
+ "rules": [
+  {
+   "id": "NA-DAY",
+   "title": "Daily sodium limit",
+   "type": "nutrient_max",
+   "scope": "day",
+   "nutrient": "sodium_mg",
+   "unit": "mg",
+   "limit": 2300,
+   "severity": "major",
+   "evidence": "Dietary Guidelines for Americans 2020\u20132025: sodium <2,300 mg/day; saturated fat <10% and added sugars <10% of energy."
+  },
+  {
+   "id": "ADDSUG-PCT",
+   "title": "Added sugar share of energy",
+   "type": "kcal_percent_max",
+   "nutrient": "added_sugar_g",
+   "limit": 10,
+   "severity": "major",
+   "evidence": "Dietary Guidelines for Americans 2020\u20132025: sodium <2,300 mg/day; saturated fat <10% and added sugars <10% of energy."
+  },
+  {
+   "id": "SATFAT-PCT",
+   "title": "Saturated fat share of energy",
+   "type": "kcal_percent_max",
+   "severity": "major",
+   "nutrient": "sat_fat_g",
+   "limit": 10,
+   "evidence": "Dietary Guidelines for Americans 2020\u20132025: sodium <2,300 mg/day; saturated fat <10% and added sugars <10% of energy."
+  },
+  {
+   "id": "FRUIT",
+   "title": "Fruit servings",
+   "type": "group_servings_min",
+   "group": "fruits",
+   "limit": 2,
+   "severity": "minor",
+   "evidence": "DGA: about 2 cup-equivalents of fruit at 2,000 kcal."
+  },
+  {
+   "id": "VEG",
+   "title": "Vegetable servings",
+   "type": "group_servings_min",
+   "group": "vegetables",
+   "limit": 3,
+   "severity": "minor",
+   "evidence": "DGA: about 2.5 cup-equivalents of vegetables at 2,000 kcal."
+  },
+  {
+   "id": "FIBER",
+   "title": "Daily fibre",
+   "type": "nutrient_min",
+   "scope": "day",
+   "nutrient": "fiber_g",
+   "unit": "g",
+   "limit": 25,
+   "severity": "minor",
+   "evidence": "DGA: 28 g/day at 2,000 kcal."
+  }
+ ]
+}
